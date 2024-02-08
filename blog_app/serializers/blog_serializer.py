@@ -19,7 +19,7 @@ class UpdateBlogSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Blog
-        exclude = ('is_deleted', 'deleted_date', 'is_active')
+        exclude = ('is_deleted', 'deleted_date', 'is_active', 'author')
 
 
 class CreateBlogCommentSerializer(serializers.ModelSerializer):
